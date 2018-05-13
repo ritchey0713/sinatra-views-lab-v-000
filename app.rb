@@ -15,7 +15,8 @@ class App < Sinatra::Base
  	
 
  	get '/date' do
- 	  @date = Date.time.strftime("%A, %B %d, %Y")
+ 	  @date = Date.time
+ 	  @date = strftime("%A, %B %d, %Y")
  		erb :date
  	end
 
