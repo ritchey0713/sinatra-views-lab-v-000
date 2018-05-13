@@ -15,7 +15,8 @@ class App < Sinatra::Base
  	
 
  	get '/date' do
- 	  @date = DateTime.new(2018, )
+ 	  @date = DateTime.new()
+ 	  binding.pry
  	  
  	  @date = strftime("%A, %B %d, %Y")
  		erb :date
