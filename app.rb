@@ -18,7 +18,7 @@ class App < Sinatra::Base
  	  @date = DateTime.new()
  	  binding.pry
  	  
- 	  @date = strftime("%A, %B %d, %Y")
+ 	  @DateTime.now.strftime("%A, %B %d, %Y")
  		erb :date
  	end
 
